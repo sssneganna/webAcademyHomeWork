@@ -1,0 +1,57 @@
+:root {
+  --color-text: #222222;
+  --color-text-btn: #FFFFFF;
+  --bg-btn: #18C6D1;
+  --btn-hover: #14D081;
+  --header-bg: #1B1B1B;
+  --nav-height: 60px;
+  --footer-height: 318px;
+  --page-width: 1220px;
+  --link-color: #FFFFFF;
+  --link-color-hover: #bea5a5;
+  --spacing: 8px;
+  --toggle-size: 30px;
+  --list-mobile-bg: #1B1B1B;
+  --color-footer-link: #767676;
+  --bg-booking-form_btn: #FF5A5F;
+  --bg-booking-form_btn-hover: #be3f43;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.global-main {
+  min-height: calc(100vh - 60px - 318px);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --page-width: 576px;
+  }
+}
+
+/*# sourceMappingURL=base.css.map */

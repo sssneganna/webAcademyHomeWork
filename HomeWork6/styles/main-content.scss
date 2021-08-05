@@ -1,0 +1,61 @@
+.main-content {
+    margin-top: 51px;
+
+    &_item {
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        margin: 10px;
+    }
+
+    &_img {
+        width: 100%;
+    }
+
+    &_info {
+        margin: 18px 19px;
+        position: relative;
+    }
+
+    &_title {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin-bottom: 17px;
+        color: var(--color-text);
+    }
+
+    &_rating {
+        font-weight: bold;
+       font-size: 26px;
+       color: #000000;
+       position: absolute;
+       top: -2px;
+       right: 0;
+    }
+
+    &_text {
+        font-size: 16px;
+        color: var(--color-text);
+        margin-bottom: 11px;
+    }
+
+    &_btn {
+        width: 100%;
+        background: var(--bg-btn);
+        color: var(--color-text-btn);
+        outline: none;
+        border: var(--bg-btn);
+        height: 40px;
+        border-radius: 5px;
+    }
+    
+    &_btn:hover, 
+    &_btn:focus {
+        background: var(--btn-hover);
+        border: var(--btn-hover);
+    }
+
+}

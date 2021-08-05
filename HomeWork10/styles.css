@@ -1,0 +1,159 @@
+:root {
+  --border-window-btn: #764299;
+  --color-window-btn: white;
+  --size-key-btn: 45px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  display: flex;
+  flex-shrink: 0;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.btn {
+  outline: none;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  z-index: 0;
+}
+
+.btn_title {
+  margin-top: 20px;
+  font-size: 17px;
+  color: #3c3c3c;
+  font-weight: 700;
+}
+
+.btn_opening-window {
+  position: absolute;
+  top: 110%;
+  right: -15%;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px;
+  transform: scaleY(0);
+  transform-origin: center 30px;
+  transition: transform 0.2s;
+}
+
+.btn_opening-window.active {
+  visibility: inherit;
+  transform: scaleY(1);
+  z-index: 1;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+
+.level {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.lesson {
+  font-weight: 700;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.btn_window {
+  width: 100%;
+  border-radius: 16px;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 2px var(--border-window-btn);
+}
+
+.theory {
+  background-color: transparent;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 2px solid var(--border-window-btn);
+}
+
+.start {
+  background-color: var(--color-window-btn);
+  border: 2px solid var(--color-window-btn);
+}
+
+.color-theory {
+  color: var(--color-window-btn);
+}
+
+.color-theory:hover {
+  color: rgb(236, 227, 227);
+}
+
+.color-start {
+  color: #ce82ff;
+}
+
+.color-start:hover {
+  color: #b17dd3;
+}
+
+.btn_key {
+  width: var(--size-key-btn);
+  height: var(--size-key-btn);
+  background-color: transparent;
+  border: 1px solid var(--border-window-btn);
+  border-radius: 20%;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0px 2px 2px var(--border-window-btn);
+}

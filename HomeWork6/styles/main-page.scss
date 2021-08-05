@@ -1,0 +1,101 @@
+.main-page {
+  background-image: url(../assets/background.png);
+  width: 100%;
+  max-width: 2048px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+.booking-form {
+  --padding-left-right: 32px;
+  width: 441px;
+  height: 475px;
+  background: #ffffff;
+  box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  padding-top: 15px;
+  padding-bottom: 24px;
+  padding-left: var(--padding-left-right);
+  padding-right: var(--padding-left-right);
+  display: flex;
+  flex-direction: column;
+
+  &_title {
+    margin-bottom: 24px;
+    font-size: 30px;
+    color: var(--color-text);
+    font-weight: normal;
+  }
+
+  &_input {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  &_label {
+    font-size: 12px;
+    color: #484848;
+    text-transform: uppercase;
+  }
+
+  &_label_margin {
+    margin-right: 102px;
+  }
+
+  &_button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &_btn {
+    background: var(--bg-booking-form_btn);
+    border-radius: 4px;
+    color: var(--color-text-btn);
+    font-size: 16px;
+    border: 1px solid var(--bg-booking-form_btn);
+    outline: none;
+    cursor: pointer;
+    width: 153px;
+    height: 48px;
+  }
+
+  &_btn:hover,
+  &_btn:focus {
+    background-color: var(--bg-booking-form_btn-hover);
+    border: 1px solid var(--bg-booking-form_btn-hover);
+  }
+}
+
+.booking-form-row {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .booking-form {
+    display: none;
+  }
+
+  .main-page {
+    background-image: url(../assets/backgroundMobille.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 9;
+    width: 100vw;
+    max-width: 768px;
+  }
+}

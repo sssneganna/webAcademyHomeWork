@@ -1,0 +1,160 @@
+.grid-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.grid-container > * {
+  flex-shrink: 0;
+  flex-grow: 0;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.grid-item-1 {
+  width: 8.3333333333%;
+}
+
+.grid-item-2 {
+  width: 16.6666666667%;
+}
+
+.grid-item-3 {
+  width: 25%;
+}
+
+.grid-item-4 {
+  width: 33.3333333333%;
+}
+
+.grid-item-5 {
+  width: 41.6666666667%;
+}
+
+.grid-item-6 {
+  width: 50%;
+}
+
+.grid-item-7 {
+  width: 58.3333333333%;
+}
+
+.grid-item-8 {
+  width: 66.6666666667%;
+}
+
+.grid-item-9 {
+  width: 75%;
+}
+
+.grid-item-10 {
+  width: 83.3333333333%;
+}
+
+.grid-item-11 {
+  width: 91.6666666667%;
+}
+
+.grid-item-12 {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .grid-item-table-1 {
+    width: 8.3333333333%;
+  }
+
+  .grid-item-table-2 {
+    width: 16.6666666667%;
+  }
+
+  .grid-item-table-3 {
+    width: 25%;
+  }
+
+  .grid-item-table-4 {
+    width: 33.3333333333%;
+  }
+
+  .grid-item-table-5 {
+    width: 41.6666666667%;
+  }
+
+  .grid-item-table-6 {
+    width: 50%;
+  }
+
+  .grid-item-table-7 {
+    width: 58.3333333333%;
+  }
+
+  .grid-item-table-8 {
+    width: 66.6666666667%;
+  }
+
+  .grid-item-table-9 {
+    width: 75%;
+  }
+
+  .grid-item-table-10 {
+    width: 83.3333333333%;
+  }
+
+  .grid-item-table-11 {
+    width: 91.6666666667%;
+  }
+
+  .grid-item-table-12 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .grid-item-mobile-1 {
+    width: 8.3333333333%;
+  }
+
+  .grid-item-mobile-2 {
+    width: 16.6666666667%;
+  }
+
+  .grid-item-mobile-3 {
+    width: 25%;
+  }
+
+  .grid-item-mobile-4 {
+    width: 33.3333333333%;
+  }
+
+  .grid-item-mobile-5 {
+    width: 41.6666666667%;
+  }
+
+  .grid-item-mobile-6 {
+    width: 50%;
+  }
+
+  .grid-item-mobile-7 {
+    width: 58.3333333333%;
+  }
+
+  .grid-item-mobile-8 {
+    width: 66.6666666667%;
+  }
+
+  .grid-item-mobile-9 {
+    width: 75%;
+  }
+
+  .grid-item-mobile-10 {
+    width: 83.3333333333%;
+  }
+
+  .grid-item-mobile-11 {
+    width: 91.6666666667%;
+  }
+
+  .grid-item-mobile-12 {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=grid.css.map */

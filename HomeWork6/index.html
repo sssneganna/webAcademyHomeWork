@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main-page.css">
+    <link rel="stylesheet" href="./styles/page-content.css">
+    <link rel="stylesheet" href="./styles/grid.css">
+    <link rel="stylesheet" href="./styles/main-content.css">
+    <link rel="stylesheet" href="./styles/country-selection.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+</head>
+
+<body>
+    <header class="global-header">
+        <div class="global-header_content page-content">
+            <nav class="global-nav" id="nav">
+                <ul class="global-nav_list">
+                    <li class="global-nav_item">
+                        <a href="#shop" class="global-nav_link">Shop</a>
+                    </li>
+                    <li class="global-nav_item">
+                        <a href="#home" class="global-nav_link">Home</a>
+                    </li>
+                    <li class="global-nav_item">
+                        <a href="#about" class="global-nav_link">About</a>
+                    </li>
+                    <li class="global-nav_item">
+                        <a href="#contact" class="global-nav_link">Contact us</a>
+                    </li>
+                </ul>
+                <button class="global-nav_toggle" id="btn"></button>
+            </nav>
+        </div>
+    </header>
+    <main class="global-main">
+        <div class="main-page" id="home">
+            <form class="booking-form" method="POST" action="#">
+                <h2 class="booking-form_title">Бронируйте <br>уникальное жилье</h2>
+                <div class="booking-form_field">
+                    <label class="booking-form_label" for="placeField">Где</label>
+                    <input class="booking-form_input" id="placeField" type="search" name="searchPlace">
+                </div>
+                <div class="booking-form-row">
+                    <div class="booking-form_field">
+                        <label class="booking-form_label" for="arrivalDate">Прибытие</label>
+                        <input class="booking-form_input" id="arrivalDate" type="date" name="arrivalDate">
+                    </div>
+                    <div class="booking-form_field">
+                        <label class="booking-form_label" for="departureDate">Выезд</label>
+                        <input class="booking-form_input" id="departureDate" type="date" name="departureDate">
+                    </div>
+                </div>
+                <div class="booking-form_field">
+                    <label class="booking-form_label booking-form_label_margin" for="person">Взрослые</label>
+                    <label class="booking-form_label" for="person">Дети</label>
+                    <input class="booking-form_input" id="person" type="search" name="person">
+                </div>
+                <div class="booking-form_button">
+                    <button class="booking-form_btn">Начать поиск</button>
+                </div>
+            </form>
+        </div>
+        <div class="page-content">
+            <div class="page-box" id="about">
+                <h1 class="page-content_title">Жилье Airbnb Plus</h1>
+                <p class="page-content_text">Подборка жилья, проверенного на качество и дизайн.</p>
+            </div>
+            <div class="grid-item-12">
+                <div class="page-content_image">
+                    <img src="./assets/plus.png" alt="plus-icon" class="image-plus-icon">
+                    <button class="page-content_btn">Найти жилье</button>
+                </div>
+            </div>
+        </div>
+        <div class="page-content" id="shop">
+            <div class="page-box">
+                <h2 class="page-content_title page-content_tittle_margin">Представляем Приключения Airbnb</h2>
+                <p class="page-content_text page-content_text_margin">Многодневные поездки под руководством местных
+                    экспертов.</p>
+                <p class="page-content_text">Развлечения, питание и проживание включены.</p>
+                <button class="page-content_scroll-btn scroll-btn_alignment scroll-btn_hidden"></button>
+            </div>
+            <div class="main-content grid-container">
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="main-content_item">
+                        <img src="./assets/travel_photo1.png" alt="travel_photo" class="main-content_img">
+                        <div class="main-content_info">
+                            <h3 class="main-content_title">Сидней</h3>
+                            <div class="main-content_rating">4.5</div>
+                            <p class="main-content_text">Убежище в джунглях на прекрасном Бали</p>
+                            <p class="main-content_text">От 820$ на человека</p>
+                            <button class="main-content_btn">Бронировать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="main-content_item">
+                        <img src="./assets/travel_photo2.png" alt="travel_photo" class="main-content_img">
+                        <div class="main-content_info">
+                            <h3 class="main-content_title">Индонезия</h3>
+                            <div class="main-content_rating">4.5</div>
+                            <p class="main-content_text">Убежище в джунглях на прекрасном Бали</p>
+                            <p class="main-content_text">От 820$ на человека</p>
+                            <button class="main-content_btn">Бронировать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="main-content_item">
+                        <img src="./assets/travel_photo3.png" alt="travel_photo" class="main-content_img">
+                        <div class="main-content_info">
+                            <h3 class="main-content_title">Филипины</h3>
+                            <div class="main-content_rating">4.5</div>
+                            <p class="main-content_text">Убежище в джунглях на прекрасном Бали</p>
+                            <p class="main-content_text">От 820$ на человека</p>
+                            <button class="main-content_btn">Бронировать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="main-content_item">
+                        <img src="./assets/travel_photo1.png" alt="travel_photo" class="main-content_img">
+                        <div class="main-content_info">
+                            <h3 class="main-content_title">Индия</h3>
+                            <div class="main-content_rating">4.5</div>
+                            <p class="main-content_text">Убежище в джунглях на прекрасном Бали</p>
+                            <p class="main-content_text">От 820$ на человека</p>
+                            <button class="main-content_btn">Бронировать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="main-content_item">
+                        <img src="./assets/travel_photo2.png" alt="travel_photo" class="main-content_img">
+                        <div class="main-content_info">
+                            <h3 class="main-content_title">Вьетнам</h3>
+                            <div class="main-content_rating">4.5</div>
+                            <p class="main-content_text">Убежище в джунглях на прекрасном Бали</p>
+                            <p class="main-content_text">От 820$ на человека</p>
+                            <button class="main-content_btn">Бронировать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="main-content_item">
+                        <img src="./assets/travel_photo3.png" alt="travel_photo" class="main-content_img">
+                        <div class="main-content_info">
+                            <h3 class="main-content_title">Петра</h3>
+                            <div class="main-content_rating">4.5</div>
+                            <p class="main-content_text">Убежище в джунглях на прекрасном Бали</p>
+                            <p class="main-content_text">От 820$ на человека</p>
+                            <button class="main-content_btn">Бронировать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="main-content_item">
+                        <img src="./assets/travel_photo1.png" alt="travel_photo" class="main-content_img">
+                        <div class="main-content_info">
+                            <h3 class="main-content_title">Индонезия</h3>
+                            <div class="main-content_rating">4.5</div>
+                            <p class="main-content_text">Убежище в джунглях на прекрасном Бали</p>
+                            <p class="main-content_text">От 820$ на человека</p>
+                            <button class="main-content_btn">Бронировать</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="main-content_item">
+                        <img src="./assets/travel_photo2.png" alt="travel_photo" class="main-content_img">
+                        <div class="main-content_info">
+                            <h3 class="main-content_title">Сидней</h3>
+                            <div class="main-content_rating">4.5</div>
+                            <p class="main-content_text">Убежище в джунглях на прекрасном Бали</p>
+                            <p class="main-content_text">От 820$ на человека</p>
+                            <button class="main-content_btn">Бронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="page-box page-box_width">
+                <h2 class="page-content_title">Жилье по всему миру</h2>
+                <button class="page-content_scroll-btn scroll-btn_alignment"></button>
+            </div>
+            <div class="country-selection grid-container">
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="country-selection_item">
+                        <a href="#"><img src="./assets/photo_place.png" alt="photo_housing"
+                                class="country-selection_img"></a>
+                        <div class="country-selection_info">
+                            <div class="country-selection_super-mark">Супер-хозяин</div>
+                            <h3 class="country-selection_title country-selection_title_center">Австрия</h3>
+                            <button class="country-selection_btn selection_btn_alignment"></button>
+                            <div class="country-selection_rating">4.90</div>
+                        </div>
+                        <p class="country-selection_text">Sunny apartment near metro station.</p>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="country-selection_item">
+                        <a href="#"><img src="./assets/photo-place2.png" alt="photo_housing"
+                                class="country-selection_img"></a>
+                        <div class="country-selection_info">
+                            <div class="country-selection_super-mark">Супер-хозяин</div>
+                            <h3 class="country-selection_title country-selection_title_center">США</h3>
+                            <button class="country-selection_btn selection_btn_alignment"></button>
+                            <div class="country-selection_rating">4.82</div>
+                        </div>
+                        <p class="country-selection_text">Grand and Cozy 1920's SF Studio</p>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="country-selection_item">
+                        <a href="#"><img src="./assets/photo-place3.png" alt="photo_housing"
+                                class="country-selection_img"></a>
+                        <div class="country-selection_info">
+                            <h3 class="country-selection_title country-selection_title_start">Таиланд</h3>
+                        </div>
+                        <p class="country-selection_text">White Breeze Pool 1BD Apartment</p>
+                    </div>
+                </div>
+                <div class="grid-item-3 grid-item-mobile-12 grid-item-table-6">
+                    <div class="country-selection_item">
+                        <a href="#"><img src="./assets/photo_place4.png" alt="photo_housing"
+                                class="country-selection_img"></a>
+                        <div class="country-selection_info">
+                            <div class="country-selection_super-mark">Супер-хозяин</div>
+                            <h3 class="country-selection_title country-selection_title_center">Великобритания</h3>
+                        </div>
+                        <p class="country-selection_text">Old Smock Windmill in rural Kent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="global-footer">
+        <div class="global-footer_content page-content">
+            <nav class="footer-nav" id="contact">
+                <div class="footer-nav_item">
+                    <h2 class="footer-nav_title">Airbnb</h2>
+                    <ul class="footer-nav_list">
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Карьера</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Новости</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Правила</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Принадлежность, этнокультурные и другие различия</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Доступность</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-nav_item">
+                    <h2 class="footer-nav_title">Подробнее о нас</h2>
+                    <ul class="footer-nav_list">
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Доверие и безопасность</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Бонус на путешествие</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Airbnb Citizen</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Деловые поездки</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Чем заняться</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Airbnbmag</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-nav_item">
+                    <h2 class="footer-nav_title">Прием гостей</h2>
+                    <ul class="footer-nav_list">
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Почему стоит принимать гостей</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Гостеприимство</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Как стать ответственным хозяином</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Организация Впечатлений</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Open Homes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-nav_item">
+                    <h2 class="footer-nav_title">Поддержка</h2>
+                    <ul class="footer-nav_list">
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Поддержка</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="#" class="footer-nav_link">Поддержка соседей<span class="new">Новинка</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="footer-flex">
+                <div class="footer-information">
+                    <img src="./assets/footer_icon.png" alt="footer_icon" class="footer-img">
+                    <div class="footer-copyright">© 2020 Airbnb, Inc. All rights reserved.</div>
+                    <ul class="footer-information_list">
+                        <li class="footer-information_item">
+                            <a href="" class="footer-information_link">Уcловия</a>
+                        </li>
+                        <li class="footer-information_item">
+                            <a href="" class="footer-information_link">Конфиденциальность</a>
+                        </li>
+                        <li class="footer-information_item">
+                            <a href="" class="footer-information_link">Карта сайта</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-network">
+                    <a href="https://www.facebook.com/" class="social-network_link" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://vk.com/" class="social-network_link" target="_blank">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a href="https://twitter.com/?lang=ru" class="social-network_link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/?hl=ru" class="social-network_link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        btn.addEventListener('click', () => {
+            nav.classList.toggle('global-nav_opened');
+        });
+    </script>
+</body>
+
+</html>
